@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4511E"
+    tools:context=".Sing_Up_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/singup_bg_drawable"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing_Up"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/singupemail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/singuppassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#6A1EE5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/click_loginpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Click here for login."
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
